@@ -1,0 +1,22 @@
+<launch>
+  <arg name="ns"/>
+  <arg name="locx"/>
+  
+
+  
+  <!-- Gazebo model spawner -->
+  <node name="spawn_turtlebot_model" pkg="gazebo_ros" type="spawn_model"
+        args="-urdf -param /robot_description -model $(arg ns) -x -$(arg locx) -y -1 -z 0"/>
+  
+  <!-- Velocity muxer -->
+  <node pkg="nodelet" type="nodelet" name="$(arg ns)_nodelet_manager_$(arg locx)" args="manager"/>
+  <node pkg="nodelet" type="nodelet" name="cmd_vel_mux_$(arg locx)"
+        args="load yocs_cmd_vel_mux/CmdVelMuxNodelet $(arg ns)_nodelet_manager">
+    <param name="yaml_cfg_file" value="$(find turtlebot_bringup)/param/mux.yaml" />
+    <remap from="cmd_vel_mux/output" to="$(arg ns)/commands/velocity"/>
+  </node>
+ 
+
+  <!-- Bumper/cliff to pointcloud (not working, as it needs sensors/core messages) -->
+  <include file="$(find turtlebot_bringup)/launch/includes/kobuki/bumper2pc.launch.xml"/>
+</launch>

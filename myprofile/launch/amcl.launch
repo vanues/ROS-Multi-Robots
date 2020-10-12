@@ -1,0 +1,14 @@
+<launch>
+  <arg name="robot_count" default="1"/>
+  <!-- Map server -->
+  <arg name="map_file" default="$(env TURTLEBOT_GAZEBO_MAP_FILE)"/>
+  <node name="map_server" pkg="map_server" type="map_server" args="$(arg map_file)" />
+
+
+  <include file="$(find myprofile)/launch/amcl_recur.launch">
+    <arg name="robot_count" value="$(arg robot_count)"/>
+
+  </include>
+
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find myprofile)/launch/includes/myrviz.rviz" />
+</launch>
