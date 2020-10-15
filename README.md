@@ -2,9 +2,9 @@
 
 This is a set of configs of ROS Kinetic to generate multi robot(s)/agent(s) in Gazebo & Rviz simulation environment.
 
-! PLEASE install ROS Kinetic FULL package before 
+! PLEASE install ROS Kinetic FULL package before
 
-U'r welcomed to open issues if found any problem
+U'r welcomed to open issues if found any problems
 
 
 
@@ -20,7 +20,7 @@ Step 1: launch mp.launch
 
 ​	`roslaunch myprofile mp.launch robot_count:=5`
 
-2: launch amcl.launch
+Step 2: launch amcl.launch
 
  	`roslaunch myprofile amcl.launch robot_count:=5`
 
