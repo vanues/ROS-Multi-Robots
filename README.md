@@ -1,3 +1,5 @@
+[中文版README](README_zh.md)
+
 # Description
 
 This is a set of configs of ROS Kinetic to generate multi robot(s)/agent(s) in Gazebo & Rviz simulation environment.
