@@ -18,11 +18,11 @@ Download **myprofile** repo to your workspace/src location
 
 Step 1: launch mp.launch
 
-​	`roslaunch myprofile mp.launch robot_count:=5`
+`roslaunch myprofile mp.launch robot_count:=5`
 
 Step 2: launch amcl.launch
 
- 	`roslaunch myprofile amcl.launch robot_count:=5`
+`roslaunch myprofile amcl.launch robot_count:=5`
 
 After launch two **launch** files above, you should see the same windows as pics in **Screenshots**
 
