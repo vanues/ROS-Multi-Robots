@@ -1,6 +1,6 @@
 # 概述
 
-这是一个在ROS Kinetic上创建多机器人模拟环境的配置文件。
+这是一个在ROS Kinetic上创建多机器人/多智能体模拟环境，并实现导航的配置文件。
 
 在使用前需要下载ROS Kinetic相关包，例如turtlebot，及navigation导航包等。
 
