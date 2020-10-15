@@ -14,7 +14,6 @@ Download **myprofile** repo to your workspace/src location
 
 
 
-# Launch 
 # Launch
 
 Step 1: launch mp.launch
