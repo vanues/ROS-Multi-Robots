@@ -4,9 +4,11 @@
 
 This is a set of configs of ROS Kinetic to generate multi robot(s)/agent(s) in Gazebo & Rviz simulation environment.
 
-! PLEASE install ROS Kinetic FULL package before
+I moved nearly every file needed to this package to make sure the environment satisfying the needs, but DO PLEASE:
 
-U'r welcomed to open issues if found any problems
+**!!!!** install **ROS Kinetic FULL package** and **Turtlebot Navigation package** (just in case)
+
+ U'r welcomed to open issues if found any problems
 
 
 
@@ -14,7 +16,7 @@ U'r welcomed to open issues if found any problems
 
 Download **myprofile** repo to your workspace/src location
 
-
+> *maybe a catkin_make is required*
 
 # Launch
 
