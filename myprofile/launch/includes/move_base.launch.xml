@@ -4,10 +4,10 @@
   <arg name="odom_frame_id"   default="$(arg robot_name)/odom"/>
   <arg name="base_frame_id"   default="$(arg robot_name)/base_footprint"/>
   <arg name="global_frame_id" default="map"/>
-  <arg name="odom_topic" default="/$(arg robot_name)/odom" />
-  <arg name="laser_topic" default="/$(arg robot_name)/scan" />
+  <arg name="odom_topic" default="odom" />
+  <arg name="laser_topic" default="scan" />
   
-  <include file="$(find myprofile)/launch/includes/velocity_smoother.launch.xml">
+  <include file="$(find myprofile)/launch/includes/velocity_smoother201012.launch.xml">
     <arg name="robot_name" value = "$(arg robot_name)"/>
   </include>
 
@@ -15,7 +15,7 @@
     <arg name="robot_name" value = "$(arg robot_name)"/>
   </include>
 
-  <node pkg="move_base" type="move_base" respawn="false" name="move_base_$(arg robot_name)" output="screen">
+  <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen">
     <rosparam file="$(find myprofile)/param/costmap_common_params.yaml" command="load" ns="global_costmap" />
     <rosparam file="$(find myprofile)/param/costmap_common_params.yaml" command="load" ns="local_costmap" />   
     <rosparam file="$(find myprofile)/param/local_costmap_params.yaml" command="load" />   
@@ -37,12 +37,13 @@
     <param name="local_costmap/global_frame" value="$(arg odom_frame_id)"/>
     <param name="local_costmap/robot_base_frame" value="$(arg base_frame_id)"/>
     <param name="DWAPlannerROS/global_frame_id" value="$(arg odom_frame_id)"/>
-
-    <remap from="cmd_vel" to="$(arg robot_name)/mobile_base/commands/velocity"/>
+  
+   <!--<remap from="cmd_vel" to="/$(arg robot_name)/mobile_base/commands/velocity"/>-->
+    <remap from="cmd_vel" to="navigation_velocity_smoother_$(arg robot_name)/raw_cmd_vel"/>
     <remap from="odom" to="$(arg odom_topic)"/>
     <remap from="scan" to="$(arg laser_topic)"/>
     <remap from="map" to="/map" />
-
+   
     <remap from="/move_base_simple/goal"                                           to="/$(arg robot_name)/move_base_simple/goal" />
     <remap from="/move_base/TebLocalPlannerROS/global_plan"                        to="/$(arg robot_name)/move_base/TebLocalPlannerROS/global_plan" />
     <remap from="/move_base/TebLocalPlannerROS/local_plan"                         to="/$(arg robot_name)/move_base/TebLocalPlannerROS/local_plan" />
@@ -87,6 +88,7 @@
     <remap from="/move_base/result"                                                to="/$(arg robot_name)/move_base/result" />
     <remap from="/move_base/status"                                                to="/$(arg robot_name)/move_base/status" />
     <remap from="/move_base_simple/goal"                                           to="/$(arg robot_name)/move_base_simple/goal" />
-
+    <remap from="/mobile_base/sensors/bumper_pointcloud"                          to="/$(arg robot_name)/mobile_base/sensors/bumper_pointcloud" />
+    
   </node>
 </launch>

@@ -10,9 +10,7 @@ Panels:
         - /Local Map1/Planner1
         - /TF1/Frames1
         - /TF1/Tree1
-        - /RobotModel3
         - /Global Map3/Costmap1
-        - /RobotModel4
         - /RobotModel5
         - /Full Plan5
       Splitter Ratio: 0.5
@@ -251,7 +249,7 @@ Visualization Manager:
           Draw Behind: true
           Enabled: true
           Name: Costmap
-          Topic: /move_base_robot1/global_costmap/costmap
+          Topic: /robot1/move_base/global_costmap/costmap
           Unreliable: false
           Use Timestamp: false
           Value: true
@@ -288,7 +286,7 @@ Visualization Manager:
           Draw Behind: false
           Enabled: true
           Name: Costmap
-          Topic: /move_base_robot1/local_costmap/costmap
+          Topic: /robot1/move_base/local_costmap/costmap
           Unreliable: false
           Use Timestamp: false
           Value: true
@@ -312,7 +310,7 @@ Visualization Manager:
           Radius: 0.0299999993
           Shaft Diameter: 0.100000001
           Shaft Length: 0.100000001
-          Topic: /move_base_robot1/DWAPlannerROS/local_plan
+          Topic: /robot1/move_base/DWAPlannerROS/local_plan
           Unreliable: false
           Value: true
         - Alpha: 0.800000012
@@ -497,7 +495,7 @@ Visualization Manager:
       Radius: 0.0299999993
       Shaft Diameter: 0.100000001
       Shaft Length: 0.100000001
-      Topic: /move_base_robot1/NavfnROS/plan
+      Topic: /robot1/move_base/NavfnROS/plan
       Unreliable: false
       Value: true
     - Alpha: 1
@@ -685,7 +683,7 @@ Visualization Manager:
           Draw Behind: true
           Enabled: true
           Name: Costmap
-          Topic: /move_base_robot2/global_costmap/costmap
+          Topic: /robot2/move_base/global_costmap/costmap
           Unreliable: false
           Use Timestamp: false
           Value: true
@@ -722,7 +720,7 @@ Visualization Manager:
           Draw Behind: false
           Enabled: true
           Name: Costmap
-          Topic: /move_base_robot2/local_costmap/costmap
+          Topic: /robot2/move_base/local_costmap/costmap
           Unreliable: false
           Use Timestamp: false
           Value: true
@@ -746,7 +744,7 @@ Visualization Manager:
           Radius: 0.0299999993
           Shaft Diameter: 0.100000001
           Shaft Length: 0.100000001
-          Topic: /move_base_robot2/DWAPlannerROS/local_plan
+          Topic: /robot2/move_base/DWAPlannerROS/local_plan
           Unreliable: false
           Value: true
         - Alpha: 0.800000012
@@ -774,7 +772,7 @@ Visualization Manager:
           Size (Pixels): 3
           Size (m): 0.0399999991
           Style: Flat Squares
-          Topic: /move_base_robot2/DWAPlannerROS/cost_cloud
+          Topic: /robot2/move_base/DWAPlannerROS/cost_cloud
           Unreliable: false
           Use Fixed Frame: true
           Use rainbow: true
@@ -804,7 +802,7 @@ Visualization Manager:
           Size (Pixels): 3
           Size (m): 0.0399999991
           Style: Flat Squares
-          Topic: /move_base_robot2/DWAPlannerROS/trajectory_cloud
+          Topic: /robot2/move_base/DWAPlannerROS/trajectory_cloud
           Unreliable: false
           Use Fixed Frame: true
           Use rainbow: false
@@ -831,7 +829,7 @@ Visualization Manager:
       Radius: 0.0299999993
       Shaft Diameter: 0.100000001
       Shaft Length: 0.100000001
-      Topic: /move_base_robot2/NavfnROS/plan
+      Topic: /robot2/move_base/NavfnROS/plan
       Unreliable: false
       Value: true
     - Alpha: 1
@@ -1019,7 +1017,7 @@ Visualization Manager:
           Draw Behind: true
           Enabled: true
           Name: Costmap
-          Topic: /move_base_robot2/global_costmap/costmap
+          Topic: /robot2/move_base/global_costmap/costmap
           Unreliable: false
           Use Timestamp: false
           Value: true
@@ -1056,7 +1054,7 @@ Visualization Manager:
           Draw Behind: false
           Enabled: true
           Name: Costmap
-          Topic: /move_base_robot2/local_costmap/costmap
+          Topic: /robot2/move_base/local_costmap/costmap
           Unreliable: false
           Use Timestamp: false
           Value: true
@@ -1080,7 +1078,7 @@ Visualization Manager:
           Radius: 0.0299999993
           Shaft Diameter: 0.100000001
           Shaft Length: 0.100000001
-          Topic: /move_base_robot2/DWAPlannerROS/local_plan
+          Topic: /robot2/move_base/DWAPlannerROS/local_plan
           Unreliable: false
           Value: true
         - Alpha: 0.800000012
@@ -1108,7 +1106,7 @@ Visualization Manager:
           Size (Pixels): 3
           Size (m): 0.0399999991
           Style: Flat Squares
-          Topic: /move_base_robot2/DWAPlannerROS/cost_cloud
+          Topic: /robot2/move_base/DWAPlannerROS/cost_cloud
           Unreliable: false
           Use Fixed Frame: true
           Use rainbow: true
@@ -1138,7 +1136,7 @@ Visualization Manager:
           Size (Pixels): 3
           Size (m): 0.0399999991
           Style: Flat Squares
-          Topic: /move_base_robot2/DWAPlannerROS/trajectory_cloud
+          Topic: /robot2/move_base/DWAPlannerROS/trajectory_cloud
           Unreliable: false
           Use Fixed Frame: true
           Use rainbow: false
@@ -1165,7 +1163,7 @@ Visualization Manager:
       Radius: 0.0299999993
       Shaft Diameter: 0.100000001
       Shaft Length: 0.100000001
-      Topic: /move_base_robot3/NavfnROS/plan
+      Topic: /robot3/move_base/NavfnROS/plan
       Unreliable: false
       Value: true
     - Alpha: 1
@@ -1353,7 +1351,7 @@ Visualization Manager:
           Draw Behind: true
           Enabled: true
           Name: Costmap
-          Topic: /move_base_robot2/global_costmap/costmap
+          Topic: /robot2/move_base/global_costmap/costmap
           Unreliable: false
           Use Timestamp: false
           Value: true
@@ -1390,7 +1388,7 @@ Visualization Manager:
           Draw Behind: false
           Enabled: true
           Name: Costmap
-          Topic: /move_base_robot2/local_costmap/costmap
+          Topic: /robot2/move_base/local_costmap/costmap
           Unreliable: false
           Use Timestamp: false
           Value: true
@@ -1414,7 +1412,7 @@ Visualization Manager:
           Radius: 0.0299999993
           Shaft Diameter: 0.100000001
           Shaft Length: 0.100000001
-          Topic: /move_base_robot2/DWAPlannerROS/local_plan
+          Topic: /robot2/move_base/DWAPlannerROS/local_plan
           Unreliable: false
           Value: true
         - Alpha: 0.800000012
@@ -1442,7 +1440,7 @@ Visualization Manager:
           Size (Pixels): 3
           Size (m): 0.0399999991
           Style: Flat Squares
-          Topic: /move_base_robot2/DWAPlannerROS/cost_cloud
+          Topic: /robot2/move_base/DWAPlannerROS/cost_cloud
           Unreliable: false
           Use Fixed Frame: true
           Use rainbow: true
@@ -1472,7 +1470,7 @@ Visualization Manager:
           Size (Pixels): 3
           Size (m): 0.0399999991
           Style: Flat Squares
-          Topic: /move_base_robot2/DWAPlannerROS/trajectory_cloud
+          Topic: /robot2/move_base/DWAPlannerROS/trajectory_cloud
           Unreliable: false
           Use Fixed Frame: true
           Use rainbow: false
@@ -1499,7 +1497,7 @@ Visualization Manager:
       Radius: 0.0299999993
       Shaft Diameter: 0.100000001
       Shaft Length: 0.100000001
-      Topic: /move_base_robot4/NavfnROS/plan
+      Topic: /robot4/move_base/NavfnROS/plan
       Unreliable: false
       Value: true
     - Alpha: 1
@@ -1687,7 +1685,7 @@ Visualization Manager:
           Draw Behind: true
           Enabled: true
           Name: Costmap
-          Topic: /move_base_robot2/global_costmap/costmap
+          Topic: /robot2/move_base/global_costmap/costmap
           Unreliable: false
           Use Timestamp: false
           Value: true
@@ -1724,7 +1722,7 @@ Visualization Manager:
           Draw Behind: false
           Enabled: true
           Name: Costmap
-          Topic: /move_base_robot2/local_costmap/costmap
+          Topic: /robot2/move_base/local_costmap/costmap
           Unreliable: false
           Use Timestamp: false
           Value: true
@@ -1748,7 +1746,7 @@ Visualization Manager:
           Radius: 0.0299999993
           Shaft Diameter: 0.100000001
           Shaft Length: 0.100000001
-          Topic: /move_base_robot2/DWAPlannerROS/local_plan
+          Topic: /robot2/move_base/DWAPlannerROS/local_plan
           Unreliable: false
           Value: true
         - Alpha: 0.800000012
@@ -1776,7 +1774,7 @@ Visualization Manager:
           Size (Pixels): 3
           Size (m): 0.0399999991
           Style: Flat Squares
-          Topic: /move_base_robot2/DWAPlannerROS/cost_cloud
+          Topic: /robot2/move_base/DWAPlannerROS/cost_cloud
           Unreliable: false
           Use Fixed Frame: true
           Use rainbow: true
@@ -1806,7 +1804,7 @@ Visualization Manager:
           Size (Pixels): 3
           Size (m): 0.0399999991
           Style: Flat Squares
-          Topic: /move_base_robot2/DWAPlannerROS/trajectory_cloud
+          Topic: /robot2/move_base/DWAPlannerROS/trajectory_cloud
           Unreliable: false
           Use Fixed Frame: true
           Use rainbow: false
@@ -1833,7 +1831,7 @@ Visualization Manager:
       Radius: 0.0299999993
       Shaft Diameter: 0.100000001
       Shaft Length: 0.100000001
-      Topic: /move_base_robot5/NavfnROS/plan
+      Topic: /robot5/move_base/NavfnROS/plan
       Unreliable: false
       Value: true
   Enabled: true
@@ -1899,5 +1897,5 @@ Window Geometry:
   Views:
     collapsed: false
   Width: 1233
-  X: 2414
-  Y: 181
+  X: 488
+  Y: 231

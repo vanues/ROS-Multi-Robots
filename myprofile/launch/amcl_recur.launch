@@ -1,6 +1,7 @@
 <launch>
   <arg name="robot_count" default="1"/>
 
+  
   <!-- Localization -->
   <include file="$(find myprofile)/launch/includes/astra_amcl.launch.xml">
     <arg name="initial_pose_x" default="-$(arg robot_count)"/>
@@ -9,10 +10,12 @@
     <arg name="robot_name" value="robot$(arg robot_count)"/>
   </include>
 
+  <group ns="robot$(arg robot_count)">
   <!-- Move base -->
   <include file="$(find myprofile)/launch/includes/move_base.launch.xml">
     <arg name="robot_name" value="robot$(arg robot_count)"/>
   </include>
+  </group>
 
 
 <!-- recursive call -->

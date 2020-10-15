@@ -1,38 +1,43 @@
 {
-  "configurations": [
-    {
-      "browse": {
-        "databaseFilename": "",
-        "limitSymbolsToIncludedHeaders": true
-      },
-      "includePath": [
-        "/home/vanuesy/Desktop/Link to decentral/devel/include/**",
-        "/home/vanuesy/decentral/devel/include/**",
-        "/home/vanuesy/projects/catkin/tuw_multi_robot/devel/include/**",
-        "/home/vanuesy/catkin_ws/devel/include/**",
-        "/opt/ros/kinetic/include/**",
-        "/home/vanuesy/catkin_ws/src/collvoid/collvoid_amcl/include/**",
-        "/home/vanuesy/catkin_ws/src/collvoid/collvoid_dwa_local_planner/include/**",
-        "/home/vanuesy/catkin_ws/src/collvoid/collvoid_local_planner/include/**",
-        "/home/vanuesy/catkin_ws/src/collvoid/collvoid_simple_global_planner/include/**",
-        "/home/vanuesy/catkin_ws/src/collvoid/collvoid_wiggle_recovery/include/**",
-        "/home/vanuesy/catkin_ws/src/m-explore/explore/include/**",
-        "/home/vanuesy/projects/catkin/tuw_multi_robot/src/Gokulnarayanan_sathyanarayanan_intern-master/include/**",
-        "/home/vanuesy/catkin_ws/src/m-explore/map_merge/include/**",
-        "/home/vanuesy/catkin_ws/src/rrt_exploration/include/**",
-        "/home/vanuesy/projects/catkin/tuw_multi_robot/src/tuw_geometry/include/**",
-        "/home/vanuesy/projects/catkin/tuw_multi_robot/src/tuw_msgs/tuw_geometry_msgs/include/**",
-        "/home/vanuesy/projects/catkin/tuw_multi_robot/src/tuw_multi_robot/tuw_multi_robot_ctrl/include/**",
-        "/home/vanuesy/projects/catkin/tuw_multi_robot/src/tuw_multi_robot/tuw_multi_robot_goal_generator/include/**",
-        "/home/vanuesy/projects/catkin/tuw_multi_robot/src/tuw_multi_robot/tuw_multi_robot_local_behavior_controller/include/**",
-        "/home/vanuesy/projects/catkin/tuw_multi_robot/src/tuw_multi_robot/tuw_multi_robot_router/include/**",
-        "/home/vanuesy/projects/catkin/tuw_multi_robot/src/tuw_multi_robot/tuw_multi_robot_rviz/include/**",
-        "/home/vanuesy/projects/catkin/tuw_multi_robot/src/tuw_msgs/tuw_nav_msgs/include/**",
-        "/home/vanuesy/projects/catkin/tuw_multi_robot/src/tuw_msgs/tuw_vehicle_msgs/include/**",
-        "/home/vanuesy/projects/catkin/tuw_multi_robot/src/tuw_multi_robot/tuw_voronoi_graph/include/**",
-        "/usr/include/**"
-      ],
-      "name": "ROS"
-    }
-  ]
+    "configurations": [
+        {
+            "browse": {
+                "databaseFilename": "",
+                "limitSymbolsToIncludedHeaders": true
+            },
+            "includePath": [
+                "/home/vanuesy/Desktop/Link to decentral/devel/include/**",
+                "/home/vanuesy/decentral/devel/include/**",
+                "/home/vanuesy/projects/catkin/tuw_multi_robot/devel/include/**",
+                "/home/vanuesy/catkin_ws/devel/include/**",
+                "/opt/ros/kinetic/include/**",
+                "/home/vanuesy/catkin_ws/src/collvoid/collvoid_amcl/include/**",
+                "/home/vanuesy/catkin_ws/src/collvoid/collvoid_dwa_local_planner/include/**",
+                "/home/vanuesy/catkin_ws/src/collvoid/collvoid_local_planner/include/**",
+                "/home/vanuesy/catkin_ws/src/collvoid/collvoid_simple_global_planner/include/**",
+                "/home/vanuesy/catkin_ws/src/collvoid/collvoid_wiggle_recovery/include/**",
+                "/home/vanuesy/catkin_ws/src/m-explore/explore/include/**",
+                "/home/vanuesy/projects/catkin/tuw_multi_robot/src/Gokulnarayanan_sathyanarayanan_intern-master/include/**",
+                "/home/vanuesy/catkin_ws/src/m-explore/map_merge/include/**",
+                "/home/vanuesy/catkin_ws/src/rrt_exploration/include/**",
+                "/home/vanuesy/projects/catkin/tuw_multi_robot/src/tuw_geometry/include/**",
+                "/home/vanuesy/projects/catkin/tuw_multi_robot/src/tuw_msgs/tuw_geometry_msgs/include/**",
+                "/home/vanuesy/projects/catkin/tuw_multi_robot/src/tuw_multi_robot/tuw_multi_robot_ctrl/include/**",
+                "/home/vanuesy/projects/catkin/tuw_multi_robot/src/tuw_multi_robot/tuw_multi_robot_goal_generator/include/**",
+                "/home/vanuesy/projects/catkin/tuw_multi_robot/src/tuw_multi_robot/tuw_multi_robot_local_behavior_controller/include/**",
+                "/home/vanuesy/projects/catkin/tuw_multi_robot/src/tuw_multi_robot/tuw_multi_robot_router/include/**",
+                "/home/vanuesy/projects/catkin/tuw_multi_robot/src/tuw_multi_robot/tuw_multi_robot_rviz/include/**",
+                "/home/vanuesy/projects/catkin/tuw_multi_robot/src/tuw_msgs/tuw_nav_msgs/include/**",
+                "/home/vanuesy/projects/catkin/tuw_multi_robot/src/tuw_msgs/tuw_vehicle_msgs/include/**",
+                "/home/vanuesy/projects/catkin/tuw_multi_robot/src/tuw_multi_robot/tuw_voronoi_graph/include/**",
+                "/usr/include/**"
+            ],
+            "name": "ROS",
+            "intelliSenseMode": "gcc-x64",
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "gnu11",
+            "cppStandard": "c++17"
+        }
+    ],
+    "version": 4
 }
