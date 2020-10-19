@@ -5,7 +5,7 @@
   <!-- Localization -->
   <include file="$(find myprofile)/launch/includes/astra_amcl.launch.xml">
     <arg name="initial_pose_x" default="-$(arg robot_count)"/>
-    <arg name="initial_pose_y" default="-1.0"/>
+    <arg name="initial_pose_y" default="-2.0"/>
     <arg name="initial_pose_a" default="0.0"/>
     <arg name="robot_name" value="robot$(arg robot_count)"/>
   </include>

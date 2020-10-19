@@ -6,20 +6,13 @@
   
   <!-- Gazebo model spawner -->
   <node name="spawn_turtlebot_model" pkg="gazebo_ros" type="spawn_model"
-        args="-urdf -param /robot_description -model $(arg ns) -x -$(arg locx) -y -1 -z 0"/>
+        args="-urdf -param /robot_description -model $(arg ns) -x -$(arg locx) -y -2 -z 0"/>
   
-  <!-- Velocity muxer -->
-  <!--<node pkg="nodelet" type="nodelet" name="$(arg ns)_nodelet_manager_$(arg locx)" args="manager"/>-->
-  <!--<node pkg="nodelet" type="nodelet" name="cmd_vel_mux_$(arg locx)"
-        args="load yocs_cmd_vel_mux/CmdVelMuxNodelet $(arg ns)_nodelet_manager">
-    <param name="yaml_cfg_file" value="$(find turtlebot_bringup)/param/mux.yaml" />
-    <remap from="cmd_vel_mux/output" to="$(arg ns)/commands/velocity"/>
-  </node>-->
   
    <node pkg="nodelet" type="nodelet" name="nodelet_manager" args="manager"/>
    <node pkg="nodelet" type="nodelet" name="cmd_vel_mux"
         args="load yocs_cmd_vel_mux/CmdVelMuxNodelet nodelet_manager">
-    <param name="yaml_cfg_file" value="$(find turtlebot_bringup)/param/mux.yaml" />
+    <param name="yaml_cfg_file" value="$(find myprofile)/param/mux.yaml" />
     <remap from="cmd_vel_mux/output" to="mobile_base/commands/velocity"/>
   </node>
  

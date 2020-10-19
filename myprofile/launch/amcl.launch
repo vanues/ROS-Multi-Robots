@@ -1,7 +1,7 @@
 <launch>
   <arg name="robot_count" default="1"/>
   <!-- Map server -->
-  <arg name="map_file" default="$(env TURTLEBOT_GAZEBO_MAP_FILE)"/>
+  <arg name="map_file" default="$(find myprofile)/maps/playground.yaml"/>
   <node name="map_server" pkg="map_server" type="map_server" args="$(arg map_file)" />
 
 
